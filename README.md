@@ -113,13 +113,6 @@ Clinical interpretation
 
 ---
 
-## Weekly Learning Log
-
-*Updated each week as work progresses.*
-
-### Week 1 — Coming soon
-### Week 2 — Coming soon
-### Week 3 — Coming soon
 
 ---
 
