@@ -15,8 +15,8 @@ Built by a molecular biologist with first-author RNA-Seq experience
 ## Motivation
 
 Cancer genomics is one of the fastest-growing applications of clinical 
-NGS globally. Somatic variant detection — identifying mutations acquired 
-by tumour cells — is central to precision oncology, targeted therapy 
+NGS globally. Somatic variant detection identifying mutations acquired 
+by tumour cells  is central to precision oncology, targeted therapy 
 selection, and diagnostic reporting in clinical laboratories.
 
 This project bridges my existing NGS research skills toward clinical 
