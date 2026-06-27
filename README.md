@@ -1,3 +1,4 @@
+
 # Cancer Somatic Variant Calling: A Technical Learning Case Study
 
 ![Status](https://img.shields.io/badge/Status-Technical%20Literacy-blue)
@@ -54,28 +55,39 @@ distinguishing acquired somatic mutations from inherited germline variants.
 
 ---
 
-## Key Difference from Germline Variant Calling
+## Knowledge Immersion Modules & Resources
 
-| Feature | Germline (GATK HaplotypeCaller) | Somatic / Cancer (GATK Mutect2) |
-|---|---|---|
-| Input samples | Single sample | Tumour AND matched normal |
-| Variant type | Inherited SNPs and indels | Acquired somatic mutations |
-| Allele frequency | ~50% or ~100% | Often low — 5% to 30% |
-| Interpretation | ACMG classification | COSMIC / OncoKB actionability |
-| Clinical use | Hereditary disease | Precision Cancer treatment |
+- [x] **Module 1: Infrastructure & Environment Control**  
+  *Focus: Reproducible research environments using WSL2 and Conda.*  
+  * [Conda User Guide](https://docs.conda.io/projects/conda/en/latest/user-guide/getting-started.html)
+  
+- [x] **Module 2: Data Curation & Reference Management**  
+  *Focus: The GRCh38 human reference and its role as the "anchor" for clinical calls.*  
+  * [NCBI Genome Reference Consortium](https://www.ncbi.nlm.nih.gov/grc/human)
 
----
+- [ ] **Module 3: Alignment Logic & Reference Bias**  
+  *Focus: BWA-MEM algorithm and how mapping choices affect variant detection.*  
+  * [BWA-MEM Research Paper (Li, 2013)](https://arxiv.org/abs/1303.3997)
 
-## Knowledge Immersion Modules
+- [ ] **Module 4: Somatic Discovery with Mutect2**  
+  *Focus: Bayesian logic for distinguishing low-frequency somatic mutations.*  
+  * [GATK Mutect2 Technical Docs](https://gatk.broadinstitute.org/hc/en-us/articles/360037593851-Mutect2)
 
-- [x] **Module 1** — Infrastructure setup (WSL2, Miniconda, Tool Installation).
-- [x] **Module 2** — Data curation and Reference Genome indexing.
-- [ ] **Module 3** — Read Alignment logic and the impact of Reference Bias.
-- [ ] **Module 4** — Mutation detection via GATK Mutect2.
-- [ ] **Module 5** — Strategic filtering of somatic calls.
-- [ ] **Module 6** — Clinical Annotation via Global Databases (COSMIC, OncoKB).
-- [ ] **Module 7** — R-based genomic visualisation (maftools).
-- [ ] **Module 8** — Clinical interpretation and summary of oncogenic significance.
+- [ ] **Module 5: Strategic Filtering & Artifact Removal**  
+  *Focus: Identifying sequencing artifacts and orientation bias.*  
+  * [Filtering Somatic Variants (Broad Institute)](https://gatk.broadinstitute.org/hc/en-us/articles/360035531132)
+
+- [ ] **Module 6: Clinical Annotation & The "Knowledge Gap"**  
+  *Focus: Analyzing the representation of African variants in global databases.*  
+  * [OncoKB Precision Oncology Database](https://www.oncokb.org/) | [COSMIC v97](https://cancer.sanger.ac.uk/cosmic)
+
+- [ ] **Module 7: Genomic Visualization in R**  
+  *Focus: Summarizing mutational landscapes via oncoplots.*  
+  * [maftools Documentation](https://bioconductor.org/packages/release/bioc/vignettes/maftools/inst/doc/maftools.html)
+
+- [ ] **Module 8: Clinical Interpretation & Actionability**  
+  *Focus: ESMO/ASCO tiers of actionability for targeted therapy.*  
+  * [ESMO Scale for Clinical Actionability (ESCAT)](https://www.esmo.org/guidelines/esmo-scale-for-clinical-actionability-of-molecular-targets-escat)
 
 ---
 
