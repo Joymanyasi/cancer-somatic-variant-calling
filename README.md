@@ -159,7 +159,6 @@ This cancer genomics project extends those skills from:
 
 **Joy Manyasi Kabaka**
 MSc Biotechnology, Kenyatta University
-BSc Biochemistry & Molecular Biology, JKUAT
 Nairobi, Kenya
 
 📧 jmanyasa@gmail.com
