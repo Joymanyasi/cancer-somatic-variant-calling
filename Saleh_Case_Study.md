@@ -37,4 +37,7 @@ If we only use a "Global Dictionary" (derived from Western cohorts) to define ca
 ---
 **Summary:** My "Cancer Variant" project is about mastering these technical tools (The Pipeline) so we can ensure that the biological truth of the Kenyan woman is never ignored again.
 
-*Source: Saleh, M., et al. (2021). Comparative analysis of triple-negative breast cancer transcriptomics of Kenyan, African American and Caucasian Women. Translational Oncology, 14(14).*
+
+---
+**Source:** [Saleh, M., et al. (2021). Comparative analysis of triple-negative breast cancer transcriptomics of Kenyan, African American and Caucasian Women. *Translational Oncology*, 14(14).](https://doi.org/10.1016/j.tranon.2021.101086)
+
