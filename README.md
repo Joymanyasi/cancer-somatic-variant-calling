@@ -17,7 +17,7 @@ structures that underpin biomedical AI systems.
 ## Motivation
 
 Cancer genomics is the engine of precision oncology. Understanding the somatic 
-variant discovery process—identifying mutations acquired by tumour cells is 
+variant discovery process  identifying mutations acquired by tumour cells is 
 essential for accurately interpreting targeted therapy selection and diagnostic 
 reporting.
 
