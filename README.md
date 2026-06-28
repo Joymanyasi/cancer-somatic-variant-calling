@@ -28,6 +28,32 @@ for my broader research into the social and ethical governance of biomedical AI.
 
 ---
 
+## 🔍 Conceptual Deep-Dive: The Logic of Somatic Calling
+
+### What is a Somatic Variant?
+Unlike germline variants (which are inherited and present in every cell), **somatic variants** are mutations that occur within a patient's lifetime in a specific tissue. In oncology, these mutations drive tumour growth. Identifying them is the core of **Precision Oncology**, allowing for targeted therapy and personalized treatment plans.
+
+### The GATK "Gold Standard" (Mutect2)
+The Broad Institute's **GATK (Genome Analysis Toolkit)** is the industry standard for high-accuracy variant discovery. For somatic research, the primary tool is **Mutect2**.
+
+**The Core Methodology:**
+1. **Matched-Normal Analysis:** The pipeline compares DNA from the patient's tumour against DNA from their own healthy "normal" tissue.
+2. **Subtraction Logic:** Mutect2 "subtracts" the germline variants found in the normal sample. What remains are the **Somatic Candidates**.
+3. **The "Panel of Normals" (PoN):** To reduce technical noise and sequencing artifacts, Mutect2 uses a PoN as an additional filter.
+
+### Why GATK Literacy is Critical for AI Governance
+As a critical social scientist, I focus on the **"Filtering Logic"** and **"Biological Assumptions"** of the GATK pipeline:
+- **Reference Bias:** If the reference genome (**GRCh38**) is European-centric, we risk mis-aligning or "losing" variants unique to East African genomes during the initial alignment step.
+- **PoN Bias:** If the **Panel of Normals** doesn't reflect African genomic diversity, the pipeline may incorrectly filter out important African-specific somatic variants as "noise."
+- **Downstream Impact:** Since AI models are trained on the output of these pipelines, any "invisibility" at the GATK level is inherited and scaled by the resulting algorithms.
+
+---
+
+
+
+
+---
+
 ## Technical Scope: The Somatic Pipeline
 
 This case study follows the "Tumour-with-Matched-Normal" logic, essential for 
